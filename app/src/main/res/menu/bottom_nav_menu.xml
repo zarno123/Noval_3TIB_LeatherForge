@@ -9,6 +9,10 @@
         android:icon="@android:drawable/ic_menu_agenda"
         android:title="Katalog" />
     <item
+        android:id="@+id/nav_note"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Catatan" />
+    <item
         android:id="@+id/nav_profile"
         android:icon="@android:drawable/ic_menu_myplaces"
         android:title="Profil" />

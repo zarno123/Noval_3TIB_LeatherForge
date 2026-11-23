@@ -10,6 +10,13 @@ activityKtx = "1.13.0"
 constraintlayout = "2.2.2"
 cardview = "1.0.0"
 filamentAndroid = "1.17.1"
+# Tambahkan versi berikut:
+ksp = "2.1.10-1.0.31"
+room = "2.7.0"
+recyclerview = "1.4.0"
+lifecycle = "2.9.0"
+viewpager2 = "1.1.0"
+dotsindicator = "5.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -22,7 +29,16 @@ androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", ve
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
 filament-android = { group = "com.google.ar.sceneform", name = "filament-android", version.ref = "filamentAndroid" }
+# Tambahkan library berikut:
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager2" }
+dotsindicator = { group = "com.tbuonomo", name = "dotsindicator", version.ref = "dotsindicator" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-
+# Tambahkan plugin KSP:
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

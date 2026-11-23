@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.Noval_3tiB.Tutorial.IntroTutorialActivity
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
@@ -22,19 +23,21 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        // 1. Ambil Nama User yang Sedang Login
+
         val sharedPref = requireActivity().getSharedPreferences("UserPref", Context.MODE_PRIVATE)
         val username = sharedPref.getString("savedUser", "noval") ?: "noval"
         val txtHalo = view.findViewById<TextView>(R.id.txtHaloNama)
         txtHalo.text = "$username 👋"
 
-        // 2. Tombol Lihat Koleksi -> Membuka Tutorial Screen
+
         val btnKoleksi = view.findViewById<MaterialButton>(R.id.btnLihatKoleksi)
         btnKoleksi.setOnClickListener {
-            startActivity(Intent(requireContext(), TutorialActivity::class.java))
+            val intent = Intent(requireContext(), IntroTutorialActivity::class.java)
+            intent.putExtra("DARI_HOME", true)
+            startActivity(intent)
         }
 
-        // 3. Interaksi Chip Group (Kategori Kriya)
+
         val chipGroup = view.findViewById<ChipGroup>(R.id.chipGroupKriya)
         chipGroup.setOnCheckedStateChangeListener { group, checkedIds ->
             if (checkedIds.isNotEmpty()) {

@@ -11,4 +11,10 @@
     <color name="espresso">#1E1B18</color>
     <color name="card_bg">#FAF8F5</color>
     <color name="text_muted">#7D756C</color>
+
+    <color name="tutorial_leather_1">#EFEBE4</color>
+    <color name="tutorial_leather_2">#E6DDD0</color>
+    <color name="tutorial_leather_3">#D8CBB8</color>
+    <color name="abu_gelap">#A1887F</color>
+    <color name="dot_selected">#4E2A14</color>
 </resources>

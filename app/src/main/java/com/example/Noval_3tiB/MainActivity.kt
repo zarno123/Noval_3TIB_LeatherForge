@@ -3,6 +3,7 @@ package com.example.Noval_3tiB
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.Noval_3tiB.Note.FragmentNote
 import com.example.Noval_3tiB.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.nav_catalog -> {
                     gantiFragment(CatalogFragment())
+                    true
+                }
+                R.id.nav_note -> {
+                    gantiFragment(FragmentNote())
                     true
                 }
                 R.id.nav_profile -> {
